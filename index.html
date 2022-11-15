@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/main.css">
+    <script src="https://kit.fontawesome.com/3d5dc49622.js" crossorigin="anonymous"></script>
+    <title>JavaScript CRUD</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/"> RETO FINAL </a>
+            </div>
+        </nav>
+    </header>
+    <div class ="container p-3">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="main-content">
+                    <div class="crud-container">
+                        <p>
+                            A continuacion podra ingresar datos para
+                            los estudiantes, las matriculas y las clases.
+                        </p>
+                        <p>
+                            Posteriormente podra ver los datos ingresados.
+                        </p>
+                        <br><br>
+                        <form id="Estudiante-formulario">
+                            <h1>Estudiante</h1>
+                            <label for="id-estudiante">ID Estudiante:</label><br>
+                            <input type="text" placeholder="ID" id="id-estudiante" style="width : 250px"><br>
+                            <label for="apellido-estudiante">Apellidos:</label><br>
+                            <input type="text" placeholder="Apellido" id="apellido-estudiante" style="width : 250px"><br>
+                            <label for="nombre-estudiante">Nombres:</label><br>
+                            <input type="text" placeholder="Nombre" id="nombre-estudiante" style="width : 250px" ><br>
+                            <br>
+                            <button type="submit" class="button is-success" id="btn-guardar-estudi">
+                                <i class="fas fa-save"></i>
+                                <span>Guardar Estudiante</span>
+                            </button>
+                        </form>
+                        
+                        <br><br>
+            
+                        <form id="Matricula-formulario">
+                            <h2>Matricula</h2>
+                            <label for="id-matricula">ID Matricula:</label><br>
+                            <input type="text" placeholder="ID" id="id-matricula" style="width : 250px"><br>
+            
+                            <label for="id-estudianteM">ID Estudiante:</label><br>
+                            <input type="text" placeholder="ID Estudiante" id="id-estudiante-Matri" style="width : 250px"><br>
+            
+                            <label for="id-claseM">ID Clase:</label><br>
+                            <input type="text" placeholder="ID Clase" id="id-clase-Matri" style="width : 250px"><br>
+                            <br>
+                            <button type="submit" class="button is-success" id="btn-guardar-matri">
+                                <i class="fas fa-save"></i>
+                                <span>Guardar Matricula</span>
+                            </button>
+                        </form>
+            
+                        <br><br>
+                        
+                        <form id="Clase-formulario">
+                            <h2>Clase</h2>
+                            <label for="id-clase">ID Clase:</label><br>
+                            <input type="text" placeholder="ID Clase" id="id-clase" style="width : 250px"><br>
+            
+                            <label for="titulo-clase">Titulo:</label><br>
+                            <input type="text" placeholder="Titulo" id="titulo-clase" style="width : 250px"><br>
+            
+                            <label for="clase-description">Descripción:</label><br>
+                            <textarea id="clase-description" rows="4" cols="30" placeholder="Descripción de la clase"></textarea><br>
+                            <br>
+                            <button type="submit" class="button is-success" id="btn-guardar-class">
+                                <i class="fas fa-save"></i>
+                                <span>Guardar Clase</span>
+                            </button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <div class="info-container">
+                <p class="prioridad">Recuerda que para el correcto funcionamiento 
+                    de los botones debes presionar en la 
+                    parte superior de los mismos
+                </p>
+                <br><br>
+                <div class="col-md-3" id="estudiantes-container"></div>
+                <div class="col-md-3" id="matriculas-container"></div>
+                <div class="col-md-3" id="clases-container"></div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
