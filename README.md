@@ -1,20 +1,30 @@
 # Reto_Final
 
 Este es un proyecto realizado en JavaScrip y Html, junto con CSS para el embellecimiento de la pagina misma, detras tambien se encuentra el uso y funcionamiento de FireBase para guardar la informacion.
+
 <br />
+
 Es una CRUD de una institucion, la cual permite guardar, listar, eliminar y actualizar informacion de 3 tablas distintas en una misma base de datos, esto mediante Firebase, una base de datos NoSQL.
+
 <br />
+
 A continuacion se muestra el funcionamiento:
+
 <br />
 <br />
 
 ## Pantalla inicial
 
 <br />
+
 ![image](https://user-images.githubusercontent.com/110188177/201831647-24274618-ea3e-4614-9bb0-f6ace4359266.png)
+
 <br />
+
 ![image](https://user-images.githubusercontent.com/110188177/201831568-089a29f3-3c05-40fe-a181-f471810ba91e.png)
+
 <br />
+
 Esta es la pantalla inicial que aparece recien se ejecuta la aplicacion, esta pantalla es donde se podra ingresar la informacion, la cual posteriormente sera almacenada en Firebase.
 <br />
 <br />
